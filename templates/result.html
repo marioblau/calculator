@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickMaths | Deutsch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        #logo {
+            width: 100%;
+        }
+
+        .upload {
+            width: 90%;
+            border: 1px dashed #ccc;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .input {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: none;
+        }
+
+        .h1 {
+            font-size: 24px;
+        }
+
+        .upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position:relative;
+        }
+
+        .upload:active,
+        .upload:hover {
+            border-color: #212121;
+        }
+        .uploadedImage{
+            position: absolute;
+            width: 100%;
+            max-height: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            z-index: 10000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light">
+                <div class="row" style="max-width: 100%; overflow: hidden;">
+                    <div class="col-sm-12 col-md-2">
+                        <img id="logo" src="{{ url_for('static', filename='QuickMaths.PNG') }}" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-10 ">
+                        <span class="navbar-brand mb-0 h1 text-center">Willkommen bei QuickMaths</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container-fluid" style="display:flex; height: 70vh; flex-direction:column; align-items: center; justify-content: center; gap: 2em;">
+            <h1> Das Ergebnis dieser Rechenoperation ist:
+                
+            </h1>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="display:flex;  flex-direction:column; align-items: center; justify-content: center;">
+                  <p>{{aiResult[0][0]}} {{aiResult[0][1]}} {{aiResult[0][2]}}</p>
+                  <h1 class="card-title" >{{aiResult[1]}}</h1>
+                  <a href="/" class="card-link">Weitere Gleichung lösen</a>
+                </div>
+              </div>
+    </main>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-3">
+                <img id="logo" src="./QuickMaths.png" alt="">
+
+                <small class="d-block mb-3 text-muted"> © Alle Rechte vorbehalten - Gruppe 5.</small>
+            </div>
+
+            <div class="col-9">
+                <center>
+                    <h5>Team</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="text-muted">Mario Blauensteiner</li>
+                        <li class="text-muted">Arpad Gerber</li>
+                        <li class="text-muted">Emmanuel Gogow</li>
+                        <li class="text-muted">Wilma Mikschl</li>
+                        <li class="text-muted">Bryan Rhyner</li>
+                        <li class="text-muted">David Riegger</li>
+                        <li class="text-muted">Coaches: Ana-Maria Melinte - Teodor Radu - Camilo Salinas</li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
