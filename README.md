@@ -9,7 +9,7 @@ Arpad Gerber <br/>
 
 
 **About** <br/>
-This is a project from students of the University of St. Gallen. This project was conducted as a part of the Winterschool 2021 which is a workshop hosted by the SHSG, the student???s association at the university of St. Gallen. <br/>
+This is a project from students of the University of St. Gallen. This project was conducted as a part of the Winterschool 2021 which is a workshop hosted by the SHSG, the students association at the university of St. Gallen. <br/>
 The goal of the project was to create a supervised machine learning classifier which recognises handwritten digits from 0 to 9 and the following mathematical operations: +, -, /, *. The classifier was then integrated in a web which enables users to upload a picture of a handwritten calculation (e.g., 7 + 7) and obtain a result (e.g., 14). The motivation for this calculator app was the fact that students often face the issue of low interpretability when looking at previously made notes, especially when the later were made under time pressure. 
 The data used to train the classifier was obtained from two separate sources and then merged together. For the digits (0 to 9) the MNIST data set was used. The pictures of the mathematical operations were drawn from an open data set on Kaggle. The user can feed the classifier with images of self-written digits which can be uploaded on a webpage and will then be classified by the algorithm. The program output is the final result of the handwritten calculation.
 
