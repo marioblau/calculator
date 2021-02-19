@@ -22,7 +22,7 @@ The program is coded in Python3 and HTML. Visual Studio code was used to impleme
 
 **Instructions** <br/>
 1. Prior to testing the program, you might want to prepare some additional self-written images of digits and mathematical operations (images should be in PNG or JPEG or JPG format). In any case you can use the images provided in the folder test-images.
-2. Open the GitHub repository in visual studio code. Run main.py and then access the route called ???/uploader??? on the development server which will bring you to the page where you will be presented with three file upload slots. 
+2. Open the GitHub repository in visual studio code. Run main.py and then access the route called */uploader* on the development server which will bring you to the page where you will be presented with three file upload slots. 
 3. Upload the digits and mathematical signs needed for your calculation and you will get the result.
 
 
@@ -51,7 +51,7 @@ https://www.pluralsight.com/guides/importing-image-data-into-numpy-arrays<br/>
 https://stackoverflow.com/questions/45826184/what-image-format-are-mnist-images<br/>
 https://machinelearningmastery.com/how-to-normalize-center-and-standardize-images-with-the-imagedatagenerator-in-keras/<br/>
 https://stackoverflow.com/questions/35842274/convert-own-image-to-mnists-image<br/>
-https://stackoverflow.com/questions/42353676/display-mnist-image-using-matplotlib<br/>
+https://stackoverflow.com/questions/42353676/display-mnist-image-using-matplotlib<br/>x
 *flask* turorial: <br/>
 https://www.youtube.com/watch?v=Z1RJmh_OqeA
 <br/>
