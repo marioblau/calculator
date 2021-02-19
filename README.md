@@ -1,4 +1,4 @@
-# **Group project: Machine Learning with Python - Digit Recognition**
+# **Group 5 project Winterschool: Machine Learning with Python - Handwriting Recognition**
 
 **Group members** <br/>
 Emmmanuel Gogow <br/>
