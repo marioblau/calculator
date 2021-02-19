@@ -1,12 +1,11 @@
 from flask import Flask, render_template, request, url_for
-#import keras
 from keras.models import model_from_json
 import computer_vision
 import time
 import os
 
 import math
-def truncate(number, digits) -> float:
+def truncate(number, digits):
     stepper = 10.0 ** digits
     return math.trunc(stepper * number) / stepper
 
