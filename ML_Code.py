@@ -239,7 +239,7 @@ plt.plot(hist['loss'], color='blue', label='train')
 #===============================================================================
 test_loss, test_acc =new_model.evaluate(testX, testY, verbose=2)
 print('\nTest accuracy:', test_acc)
-# Test accuracy: 0.9937571883201599
+
 
 # load saved model
 #====================================
@@ -265,7 +265,7 @@ print("Loaded model from disk")
 loaded_model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 loaded_test_loss, loaded_test_acc = loaded_model.evaluate(testX, testY, verbose=2)
 print('\nLoaded_Test accuracy:', loaded_test_acc)
-# Loaded_Test accuracy: 0.9937571883201599
+
 
 
 # Predict image functiom
