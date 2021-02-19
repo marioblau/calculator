@@ -6,6 +6,7 @@ Mario Blauensteiner <br/>
 Wilma Mikschl <br/>
 David Riegger <br/>
 Arpad Gerber <br/>
+Bryan Rhyner <br/>
 
 
 **About** <br/>
