@@ -9,20 +9,22 @@ Arpad Gerber <br/>
 
 
 **About** <br/>
-This is a student project of the University of St. Gallen of the course Programming with Advanced Computer Languages. <br/>
-The goal of the project was to create a supervised  machine learning classifier which recognises hand written digits from 0 to 9.
-The classifier is based on training and test data sets provided by the MNIST data base. We enhanced the program by adding a feature that allows the user to feed the classifier with images of self-written digits. The program output is the final digit classification.
+This is a student???s project from students of the University of St. Gallen. This project was conducted as a part of the Winterschool 2021 which is a workshop hosted by the SHSG, the student???s association at the university of St. Gallen. <br/>
+The goal of the project was to create a supervised machine learning classifier which recognises handwritten digits from 0 to 9 and the following mathematical operations: +, -, /, *. The classifier was then integrated in a web which enables users to upload a picture of a handwritten calculation (e.g., 7 + 7) and obtain a result (e.g., 14). The motivation for this calculator app was the fact that students often face the issue of low interpretability when looking at previously made notes, especially when the later were made under time pressure. 
+The data used to train the classifier was obtained from two separate sources and then merged together. For the digits (0 to 9) the MNIST data set was used. The pictures of the mathematical operations were drawn from an open data set on Kaggle. The user can feed the classifier with images of self-written digits which can be uploaded on a webpage and will then be classified by the algorithm. The program output is the final result of the handwritten calculation.
+
 
 
 **Pre-requisites** <br/>
-The program is coded in Python3. The following libraries need to be installed prior to running the program: <br/>
-*numpy, tensorflow, keras, sklearn, PIL, matplotlib*
+The program is coded in Python3 and HTML. Visual Studio code was used to implement the web app with flask. The following libraries need to be installed prior to running the program: <br/>
+*numpy, tensorflow, keras, sklearn, PIL (pillow), matplotlib, pandas, python flask*
+
 
 **Instructions** <br/>
-1. Prior to starting the programm, you might want to add some additional self-written images of digits to the folder 'Digit Images' (images should be in PNG or JPEG format).
-2. Run the file Project_version_4.ipynb.
-3. Choose which digit you want to classify by changing the file name of the respective image in the image converter.
-4. The output should give the digit classification as well as a plot showing the recognition probabilites.
+1. Prior to testing the program, you might want to prepare some additional self-written images of digits and mathematical operations (images should be in PNG or JPEG or JPG format). In any case you can use the images provided in the folder test-images.
+2. Open the GitHub repository in visual studio code. Run main.py and then access the route called ???/uploader??? on the development server which will bring you to the page where you will be presented with three file upload slots. 
+3. Upload the digits and mathematical signs needed for your calculation and you will get the result.
+
 
 **Description** <br/>
 First, the data was prepared. We load data sets for training and testing from the MNIST package to get the data for the digits 0 to 9. Then we downloaded a dataset with mathematical symbols from Kaggle to get the symbols +, -, /, *. The kaggle data had to be imported from a desktop folder and transformed to match the style of the MNIST data. After that, the digits and the mathematical symbols were merged to one dataset. Then the data was brought into a form that is optimized for the learning model and the values were normalized values to the range from 0 to 1. <br/>
