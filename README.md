@@ -52,7 +52,7 @@ https://www.pluralsight.com/guides/importing-image-data-into-numpy-arrays<br/>
 https://stackoverflow.com/questions/45826184/what-image-format-are-mnist-images<br/>
 https://machinelearningmastery.com/how-to-normalize-center-and-standardize-images-with-the-imagedatagenerator-in-keras/<br/>
 https://stackoverflow.com/questions/35842274/convert-own-image-to-mnists-image<br/>
-https://stackoverflow.com/questions/42353676/display-mnist-image-using-matplotlib<br/>x
+https://stackoverflow.com/questions/42353676/display-mnist-image-using-matplotlib<br/>
 *flask* turorial: <br/>
 https://www.youtube.com/watch?v=Z1RJmh_OqeA
 <br/>
